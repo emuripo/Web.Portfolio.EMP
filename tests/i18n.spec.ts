@@ -5,5 +5,5 @@ test("language toggle switches EN to ES", async ({ page }) => {
   const toggle = page.getByRole("button", { name: /EN|ES/ });
   await toggle.click();
 
-  await expect(page.getByRole("link", { name: /Impacto|Sobre mí|Inicio/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Impacto" })).toBeVisible();
 });
