@@ -26,7 +26,7 @@ export function About() {
         <div className="relative mx-auto w-full max-w-[22rem]">
           <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-white/10 shadow-lg">
             <Image
-              src="/assets/img/esteban-about.jpg"
+              src="/assets/img/esteban-about.JPG"
               alt={about.imageAlt}
               fill
               className="object-contain"

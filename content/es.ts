@@ -73,7 +73,7 @@ export const es = {
     headline: "Introducción rápida",
     description:
       "Un breve resumen de mi trayectoria, estilo de liderazgo y cómo colaboro con producto y reclutamiento.",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "uvLTy_N54qI",
     caption: "Resumen de 2 minutos en inglés",
   },
   experience: {

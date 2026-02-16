@@ -46,7 +46,7 @@ export function Hero() {
           <div className="relative w-full max-w-[24rem]">
             <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-white/10 shadow-glow">
               <Image
-                src="/assets/img/esteban-hero.jpg"
+                src="/assets/img/esteban-hero.PNG"
                 alt={hero.portraitAlt}
                 fill
                 priority

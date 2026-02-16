@@ -73,7 +73,7 @@ export const en = {
     headline: "Quick introduction",
     description:
       "A brief overview of my background, leadership approach, and how I collaborate with product and recruiting teams.",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "uvLTy_N54qI",
     caption: "2-minute overview in English",
   },
   experience: {

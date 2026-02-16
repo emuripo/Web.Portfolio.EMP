@@ -108,8 +108,8 @@ PROJECT STRUCTURE (MUST MATCH EXACTLY)
 /public
   /assets
     /img
-      esteban-hero.png
-      esteban-about.jpg
+      esteban-hero.PNG
+      esteban-about.JPG
       esteban-speaking.jpg
       project-*.png
       og.png
