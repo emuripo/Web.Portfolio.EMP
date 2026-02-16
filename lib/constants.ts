@@ -17,9 +17,11 @@ export const FEATURE_FLAGS: {
   videoMode: VideoMode;
   enableCalendly: boolean;
   showSections: Record<keyof typeof ANCHORS, boolean>;
+  projectsTilt: boolean;
 } = {
   videoMode: "youtube",
   enableCalendly: true,
+  projectsTilt: true,
   showSections: {
     hero: true,
     stats: true,

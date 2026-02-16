@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import { Reveal } from "./motion/Reveal";
 import { ANCHORS, CONTACT, FEATURE_FLAGS } from "../lib/constants";
 import { useTranslation } from "./LanguageToggle";
 import { Card } from "./ui/Card";
@@ -27,28 +28,32 @@ export function Contact() {
   return (
     <Section id={ANCHORS.contact} heading={contact.headline}>
       <div className="grid gap-6 md:grid-cols-[1fr_1.2fr]">
-        <Card className="bg-white/5">
-          <p className="text-white/80">{contact.subhead}</p>
-          <div className="mt-4 space-y-2 text-sm text-white/70">
-            <Link className="block" href={`mailto:${CONTACT.email}`} aria-label={contact.emailLabel}>
-              {contact.emailLabel}: {CONTACT.email}
-            </Link>
-            <Link className="block" href={`tel:${CONTACT.phone}`} aria-label={contact.phoneLabel}>
-              {contact.phoneLabel}: {CONTACT.phone}
-            </Link>
-            <Link className="block" href={CONTACT.linkedin} target="_blank" rel="noreferrer">
-              {translation.labels.linkedin}
-            </Link>
-            <Link className="block" href={CONTACT.github} target="_blank" rel="noreferrer">
-              {translation.labels.github}
-            </Link>
-          </div>
-        </Card>
-        {FEATURE_FLAGS.enableCalendly ? (
+        <Reveal variant="fadeUp">
           <Card className="bg-white/5">
-            <p className="mb-4 text-sm text-white/70">{contact.calendlyLabel}</p>
-            <CalendlyFrame url={CONTACT.calendly} title={contact.calendlyLabel} />
+            <p className="text-white/80">{contact.subhead}</p>
+            <div className="mt-4 space-y-2 text-sm text-white/70">
+              <Link className="block" href={`mailto:${CONTACT.email}`} aria-label={contact.emailLabel}>
+                {contact.emailLabel}: {CONTACT.email}
+              </Link>
+              <Link className="block" href={`tel:${CONTACT.phone}`} aria-label={contact.phoneLabel}>
+                {contact.phoneLabel}: {CONTACT.phone}
+              </Link>
+              <Link className="block" href={CONTACT.linkedin} target="_blank" rel="noreferrer">
+                {translation.labels.linkedin}
+              </Link>
+              <Link className="block" href={CONTACT.github} target="_blank" rel="noreferrer">
+                {translation.labels.github}
+              </Link>
+            </div>
           </Card>
+        </Reveal>
+        {FEATURE_FLAGS.enableCalendly ? (
+          <Reveal variant="scaleIn" delay={0.05}>
+            <Card className="bg-white/5">
+              <p className="mb-4 text-sm text-white/70">{contact.calendlyLabel}</p>
+              <CalendlyFrame url={CONTACT.calendly} title={contact.calendlyLabel} />
+            </Card>
+          </Reveal>
         ) : null}
       </div>
     </Section>
