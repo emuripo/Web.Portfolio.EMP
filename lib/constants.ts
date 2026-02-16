@@ -46,9 +46,9 @@ export const CONTACT = {
 
 export const SEO = {
   siteUrl: "https://estebanmurillo.dev",
-  title: "Esteban Murillo Porras — Senior Software Engineer",
+  title: "Esteban Murillo — RAG & Cloud-Native Backend Engineer",
   description:
-    "Recruiter landing page for Esteban Murillo Porras, Senior Software Engineer (Backend / Cloud / AI).",
+    "Senior Software Engineer (7+ yrs, Costa Rica) delivering RAG pipelines, OpenAI integrations, and cloud-native automation with measurable outcomes.",
   ogImage: "/assets/img/og.png",
   twitter: "@esteban_codes",
 };

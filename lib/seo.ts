@@ -33,7 +33,7 @@ export function personJsonLd() {
     "@type": "Person",
     name: "Esteban Murillo Porras",
     url: SEO.siteUrl,
-    jobTitle: "Senior Software Engineer (Backend / Cloud / AI)",
+    jobTitle: "Senior Software Engineer (RAG / OpenAI / Cloud-native Backend)",
     email: `mailto:${CONTACT.email}`,
     telephone: CONTACT.phone,
     sameAs: [CONTACT.github, CONTACT.linkedin],

@@ -11,7 +11,7 @@ export const en = {
     skipToContent: "Skip to content",
     languageToggle: "EN",
     downloadResume: "Download Resume",
-    bookCall: "Book a Call",
+    bookCall: "See GenAI Projects",
     watchVideo: "Watch Introduction",
     viewProject: "View project",
     linkedin: "LinkedIn",
@@ -31,14 +31,14 @@ export const en = {
     { label: "Resume", href: `#${ANCHORS.resume}` },
   ],
   hero: {
-    eyebrow: "Senior Software Engineer",
-    title: "Esteban Murillo Porras",
+    eyebrow: "Senior Backend & GenAI Engineer",
+    title: "RAG, LLM integrations, cloud-native delivery",
     subtitle:
-      "Backend, Cloud, and AI engineer with a decade of building reliable, scalable products for millions of users.",
+      "I design RAG pipelines, LLM-powered features, and automated cloud backends that reduce time-to-knowledge and operational load.",
     highlights: [
-      "10+ years across backend, data, and cloud platforms",
-      "Leadership in distributed systems, observability, and SRE",
-      "Bilingual: Spanish (Native), English (C1)",
+      "-60% lookup time with RAG + Azure Cognitive Search",
+      "+30% usability/page load from AI-enabled UI components",
+      "-40% environment setup with Jenkins + Terraform automation",
     ],
     primaryCta: {
       label: "Download Resume",
@@ -46,27 +46,39 @@ export const en = {
       ariaLabel: "Download Esteban's resume in PDF",
     },
     secondaryCta: {
-      label: "Book Intro Call",
-      href: CONTACT.calendly,
-      ariaLabel: "Open Calendly to book an intro call",
+      label: "See GenAI Projects",
+      href: `#${ANCHORS.projects}`,
+      ariaLabel: "Jump to GenAI and RAG projects",
     },
     portraitAlt: "Portrait of Esteban Murillo Porras",
   },
   stats: {
     headline: "Impact at a glance",
     items: [
-      { label: "Systems uptime", value: "99.99%", helper: "Led reliability and on-call" },
-      { label: "Team leadership", value: "8 engineers", helper: "Mentored across squads" },
-      { label: "Cloud savings", value: "$280k", helper: "Optimized compute & storage" },
+      {
+        label: "RAG lookup time",
+        value: "-60%",
+        helper: "Azure Cognitive Search + RAG pipeline",
+      },
+      {
+        label: "AI-enabled UI performance",
+        value: "+30%",
+        helper: "Usability and page load improvements",
+      },
+      {
+        label: "Env setup automation",
+        value: "-40%",
+        helper: "Jenkins + Terraform",
+      },
     ],
   },
   about: {
-    headline: "I build resilient systems with measurable outcomes",
+    headline: "I build cloud-native systems with LLM and RAG features",
     body: [
-      "I'm a Costa Rica-based engineer focused on backend, cloud, and AI-driven products. I enjoy translating business needs into maintainable, observable, and cost-efficient services.",
-      "Recent work includes platform migrations, designing event-driven architectures, and hardening reliability with SLOs, tracing, and chaos drills.",
+      "Senior Software Engineer (7+ years, Costa Rica) building backends and GenAI integrations that cut lookup time, improve usability, and automate delivery across cloud platforms.",
+      "What I do: RAG pipelines, OpenAI integrations, event-driven microservices, CI/CD automation, Kubernetes operations.",
     ],
-    tags: ["Backend", "Cloud", "AI", "SRE", "Platform", "Leadership"],
+    tags: ["RAG", "OpenAI APIs", "Cloud-native", "Automation", "Kubernetes", "Python/Java"],
     imageAlt: "Esteban speaking at a conference",
   },
   video: {
@@ -85,10 +97,10 @@ export const en = {
         period: "Jun 2025 – Present",
         location: "San José, Costa Rica",
         achievements: [
-          "Built and maintained Python APIs, reducing data errors by 20%.",
-          "Developed AI-enabled UI components, improving usability and page load speed by 30%.",
-          "Automated deployments with Jenkins and Terraform, reducing environment setup time by 40%.",
-          "Leveraged AWS Lambda for data-driven workloads, reducing manual interventions by 25%.",
+          "Built Python APIs, reducing data errors by 20% and stabilizing services.",
+          "Delivered AI-enabled UI components, improving usability and page load speed by 30%.",
+          "Automated environments with Jenkins + Terraform, cutting setup time by 40%.",
+          "Used AWS Lambda to trim manual interventions by 25% for data workflows.",
         ],
       },
       {
@@ -97,10 +109,10 @@ export const en = {
         period: "Apr 2022 – Jun 2025",
         location: "San José, Costa Rica",
         achievements: [
-          "Delivered HR and healthcare platforms using Python APIs, improving reliability by 35%.",
-          "Built CI/CD pipelines with Jenkins, GitHub Actions, and Terraform, reducing release cycles by 35%.",
-          "Deployed applications using Docker and Kubernetes (AWS EKS), reducing downtime by 40%.",
-          "Applied RBAC and validation layers, cutting compliance risks by 30%.",
+          "Shipped HR and healthcare platforms with Python APIs, boosting reliability by 35%.",
+          "Cut release cycles by 35% via CI/CD with Jenkins, GitHub Actions, and Terraform.",
+          "Reduced downtime by 40% using Docker and Kubernetes on AWS EKS.",
+          "Lowered compliance risk by 30% with RBAC and validation layers.",
         ],
       },
       {
@@ -109,9 +121,9 @@ export const en = {
         period: "Feb 2018 – Apr 2022",
         location: "San José, Costa Rica",
         achievements: [
-          "Built Python REST APIs integrated with PostgreSQL, improving transaction reliability by 35%.",
-          "Developed dashboards for real-time reconciliation and reporting.",
-          "Automated workflows and third-party API integrations, reducing administrative workload by 50%.",
+          "Built Python REST APIs with PostgreSQL, improving transaction reliability by 35%.",
+          "Delivered reconciliation dashboards for real-time reporting.",
+          "Automated workflows and 3rd-party API integrations, cutting admin workload by 50%.",
         ],
       },
     ],
@@ -120,26 +132,29 @@ export const en = {
     headline: "Selected projects",
     items: [
       {
-        name: "Cloud Cost Guard",
-        description: "Automated cloud cost governance with anomaly alerts and rightsizing recommendations.",
-        tech: ["TypeScript", "AWS", "EventBridge", "Lambda", "Step Functions"],
-        impact: "Reduced monthly spend by 18% across targeted services.",
+        name: "AI Knowledge Search Assistant (RAG)",
+        description:
+          "Python + OpenAI APIs with a RAG pipeline over Azure Cognitive Search, reducing lookup time by 60%.",
+        tech: ["RAG", "Azure Cognitive Search", "OpenAI APIs", "Python"],
+        impact: "-60% lookup time",
         link: "https://github.com/emuripo",
         image: "/assets/img/project-1.png",
       },
       {
-        name: "Observability Starter",
-        description: "Opinionated templates for distributed tracing, metrics, and logs with OpenTelemetry.",
-        tech: ["Node.js", "OpenTelemetry", "Grafana", "Tempo"],
-        impact: "Cut onboarding time for new services by 40%.",
+        name: "Membership Payment System",
+        description:
+          "Spring Boot microservices with RabbitMQ retry queues for multi-tenant payments, achieving 99.95% reliability and -40% deploy time via Jenkins + Docker.",
+        tech: ["Spring Boot", "RabbitMQ", "Microservices", "CI/CD"],
+        impact: "99.95% reliability",
         link: "https://github.com/emuripo",
         image: "/assets/img/project-2.png",
       },
       {
-        name: "AI Incident Assistant",
-        description: "LLM-powered assistant that summarizes incidents and proposes remediation tasks for on-call.",
-        tech: ["Python", "LangChain", "FastAPI", "Azure OpenAI"],
-        impact: "Accelerated incident postmortems and reduced cognitive load during outages.",
+        name: "HR Management System",
+        description:
+          "Python APIs for enterprise portals serving 20K+ users; Docker + Kubernetes reduced downtime by 35%.",
+        tech: ["Python", "Kubernetes", "Docker", "APIs"],
+        impact: "-35% downtime",
         link: "https://github.com/emuripo",
         image: "/assets/img/project-3.png",
       },
@@ -149,20 +164,24 @@ export const en = {
     headline: "Skills",
     groups: [
       {
-        title: "Backend",
-        items: ["TypeScript", "Node.js", "Python", "GraphQL", "REST", "gRPC"],
+        title: "AI & LLMs",
+        items: ["OpenAI APIs", "Prompt Engineering", "RAG"],
       },
       {
         title: "Cloud & Platform",
         items: ["AWS", "Azure", "Kubernetes", "Docker", "Terraform", "CI/CD"],
       },
       {
-        title: "Data & AI",
-        items: ["PostgreSQL", "Redis", "Kafka", "Snowflake", "OpenAI APIs", "Feature Stores"],
+        title: "Backend",
+        items: ["Python", "Java/Spring", "Node.js", "REST", "gRPC"],
       },
       {
-        title: "Practices",
-        items: ["SRE", "Observability", "Domain-Driven Design", "Testing", "Security", "Mentorship"],
+        title: "Data",
+        items: ["PostgreSQL", "Redis", "MongoDB", "DynamoDB", "SQL Server"],
+      },
+      {
+        title: "Testing",
+        items: ["PyTest", "JUnit", "Jest", "Cypress", "Postman", "xUnit"],
       },
     ],
   },
